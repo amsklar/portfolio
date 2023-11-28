@@ -1,0 +1,199 @@
+body {
+    font-family: 'Verdana', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #cdc5a3;
+}
+
+header {
+    background-color: #40140f;
+    color: #ffffff;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav {
+    background-color: #40140f;
+    padding: 1em;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+nav a:hover,
+li.active a {
+    color: #eb1d1d;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    color: #ffffff;
+    font-weight: bold;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f0eded;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #24231f;
+    text-align: left;
+    padding: 12px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #eb1d1d;
+    color: #ffffff;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+main {
+    padding: 10px;
+}
+
+a[href="#main-content"] {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* PORTFOLIO PAGE */
+
+#container {
+    position: relative;
+    width: 100%;
+    height: 650px;
+    border: 2px solid #000;
+    background-color: #d9d5c5;
+    overflow: hidden;
+  }
+
+.draggable {
+    position: absolute;
+    cursor: move;
+  }
+
+.port {
+    font-style: italic;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+/* ABOUT PAGE */
+
+#about {
+    color: #eb1d1d;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+#about-content a {
+    color: #eb1d1d;
+    text-decoration: underline;
+}
+
+#about-content p {
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#about-content a:hover {
+    color: #eb1d1d;
+    text-decoration: none;
+}
+
+#image-gallery {
+    margin-top: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+}
+
+.gallery img {
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+/* Graduate Student Page */
+
+.desc p {
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.content-section {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.grad {
+    width: 100%;
+    max-width: 390px;
+    object-fit: cover;
+    margin-right: 20px;
+    margin-top: 50px;
+}
+
+.text-content {
+    flex: 1;
+}
+
+.text-content h2 {
+    font-size: 1.5em;
+    font-style: italic;
+    color: #40140f;
+}
+
+.text-content p {
+    line-height: 1.5;
+}
