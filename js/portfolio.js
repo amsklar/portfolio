@@ -1,3 +1,4 @@
+// This code allows for drop-and-drag functionality on portfolio page
 
 // Resources: https://stackoverflow.com/questions/9334084/moveable-draggable-div
 // https://stackoverflow.com/questions/9334084/moveable-draggable-div
@@ -5,19 +6,26 @@
 // https://stackoverflow.com/questions/48169491/add-and-drag-new-item-by-click
 // https://stackoverflow.com/questions/16999189/addeventlistener-mousemove-on-document-ready
 // https://www.w3schools.com/howto/howto_css_modals.asp
-// inspiration: https://www.sydneykleinrock.com/
 
+// Inspiration: https://www.sydneykleinrock.com/
+
+
+// Control the speed a user can drag an item
 const speedFactor = 0.7;
 
+// query the data representation of the objects
 const draggables = document.querySelectorAll('.draggable');
 
+// set an index for the draggable items
 let zIndexCounter = 1;
 
+// Event listeners
 draggables.forEach((draggable) => {
   let posX = parseInt(draggable.style.left, 10) || 0;
   let posY = parseInt(draggable.style.top, 10) || 0;
   let zIndex = zIndexCounter++;
 
+  // calcualtes the mouse function
   draggable.addEventListener('mousedown', (e) => {
     e.preventDefault();
 
@@ -52,10 +60,11 @@ draggables.forEach((draggable) => {
     document.addEventListener('mouseup', upHandler);
   });
 
+  // specifies when you click on the image it is brought to the front
   draggable.addEventListener('click', () => {
     draggable.style.zIndex = zIndexCounter++;
   });
-
+  // specifies when you double-clikc the image displays at full screen
   draggable.addEventListener('dblclick', () => {
     if (!document.fullscreenElement) {
       draggable.requestFullscreen();
@@ -65,11 +74,12 @@ draggables.forEach((draggable) => {
   });
 });
 
+// event listener when fullscreen
 document.addEventListener('fullscreenchange', () => {
   if (!document.fullscreenElement) {
   }
 });
-
+// applies container dimensions
 const container = document.getElementById('container');
 const containerWidth = container.clientWidth;
 const containerHeight = container.clientHeight;

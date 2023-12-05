@@ -2,7 +2,7 @@ body {
     font-family: 'Verdana', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #cdc5a3;
+    background-color: rgb(240, 231, 209);
 }
 
 header {
@@ -41,9 +41,12 @@ nav a {
     font-weight: bold;
 }
 
-nav a:hover,
-li.active a {
+nav a:hover {
     color: #eb1d1d;
+}
+
+li.active a {
+    text-decoration: underline;
 }
 
 .dropdown {
@@ -87,7 +90,7 @@ main {
     padding: 10px;
 }
 
-a[href="#main-content"] {
+.skip-link {
     position: absolute;
     left: -9999px;
     top: auto;
@@ -96,16 +99,21 @@ a[href="#main-content"] {
     overflow: hidden;
 }
 
+
 /* PORTFOLIO PAGE */
 
+
 #container {
-    position: relative;
-    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+    width: 1300px;
     height: 650px;
-    border: 2px solid #000;
-    background-color: #d9d5c5;
+    border: 2px solid #484848;
+    background-color: rgb(220, 215, 199);
     overflow: hidden;
-  }
+}
 
 .draggable {
     position: absolute;
@@ -118,7 +126,8 @@ a[href="#main-content"] {
     font-size: 0.9em;
 }
 
-/* ABOUT PAGE */
+
+/* HOME PAGE */
 
 #about {
     color: #eb1d1d;
@@ -197,3 +206,50 @@ a[href="#main-content"] {
 .text-content p {
     line-height: 1.5;
 }
+
+/* Teaching Experience - Courses */
+
+#courses {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.teaching-experience-item {
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+}
+
+.teaching-experience-item img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.teaching-experience-item h3 {
+    margin-top: 10px;
+    color: #40140f;
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.teaching-experience-item h4{
+    text-align: center;
+    font-size: small;
+    font-weight: 500;
+    font-style: italic;
+    color: #40140f;
+}
+
+h2{
+    color:#eb1d1d;
+    font-size: 1.7em;
+}
+
+
+/* @media only screen and (max-width: 600px) */
