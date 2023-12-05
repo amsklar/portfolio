@@ -185,6 +185,11 @@ main {
     margin: 0 auto;
 }
 
+.content-section img{
+    height: auto;
+    border-radius: 8px;
+}
+
 .grad {
     width: 100%;
     max-width: 390px;
