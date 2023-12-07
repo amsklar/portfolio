@@ -140,7 +140,8 @@ main {
 }
 
 #about-content a {
-    color: #eb1d1d;
+    color:#40140f;
+    font-weight: bold;
     text-decoration: underline;
 }
 
@@ -260,6 +261,10 @@ h2{
 }
 
 
+#CVcontent p {
+    text-align: center;
+    font-style: italic;
+}
 
 @media only screen and (max-width: 767px) {
     header {
