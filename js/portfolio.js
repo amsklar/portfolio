@@ -10,10 +10,9 @@
 // Inspiration: https://www.sydneykleinrock.com/
 
 
-// Control the speed a user can drag an item
+// Control the speed
 const speedFactor = 0.7;
 
-// query the data representation of the objects
 const draggables = document.querySelectorAll('.draggable');
 
 // set an index for the draggable items
