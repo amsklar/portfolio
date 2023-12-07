@@ -126,6 +126,9 @@ main {
     font-size: 0.9em;
 }
 
+#mobile-message {
+    display: none;
+}
 
 /* HOME PAGE */
 
@@ -257,4 +260,91 @@ h2{
 }
 
 
-/* @media only screen and (max-width: 600px) */
+
+@media only screen and (max-width: 767px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .content-section {
+        flex-direction: column;
+    }
+
+    .grad {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .text-content {
+        flex: none;
+        max-width: 100%;
+    }
+
+    .text-content h2 {
+        font-size: 1.2em;
+    }
+
+    .teaching-experience-item {
+        width: 100%;
+    }
+
+    .teaching-experience-item h3,
+    .teaching-experience-item h4 {
+        text-align: center;
+    }
+
+    #courses {
+        gap: 5px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5px;
+    }
+
+    .gallery img {
+        width: 100%;
+    }
+    .portfolio-body {
+        padding: 10px;
+    }
+
+    h2#about {
+        font-size: 1.5em;
+    }
+
+    p.port {
+        display: none;
+    }
+
+    #container {
+        display:none
+    }
+
+    #mobile-message {
+        display: block;
+        text-align: center;
+        margin: 20px;
+        color: rgb(0, 0, 0);
+        font-weight: bolder;
+        font-size: 1.7em;
+    }
+}
+
+
+
+

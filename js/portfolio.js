@@ -83,4 +83,3 @@ document.addEventListener('fullscreenchange', () => {
 const container = document.getElementById('container');
 const containerWidth = container.clientWidth;
 const containerHeight = container.clientHeight;
-
