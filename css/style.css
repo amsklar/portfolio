@@ -173,7 +173,6 @@ main {
     border-radius: 8px;
 }
 
-
 /* Graduate Student Page */
 
 .desc p {
@@ -264,6 +263,7 @@ h2{
 #CVcontent p {
     text-align: center;
     font-style: italic;
+
 }
 
 @media only screen and (max-width: 767px) {
