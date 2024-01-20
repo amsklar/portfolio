@@ -99,6 +99,31 @@ main {
     overflow: hidden;
 }
 
+footer {
+    background-color: #40140f;
+    padding: 15px;
+}
+
+.footer-content {
+    text-align: right;
+    color: white;
+}
+
+footer p {
+    font-size: smaller;
+}
+
+.social-media-links a {
+    display: inline;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.social-media-links a img {
+    width: 25px;
+    height: 25px;
+}
+
 
 /* PORTFOLIO PAGE */
 
